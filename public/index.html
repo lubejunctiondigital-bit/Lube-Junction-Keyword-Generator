@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lube Junction Keyword Generator</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Tanzania Oil & Lubricants Keyword Generator</h1>
+      <p>
+        Generate TikTok and Instagram keyword sets built on maintenance intent, problem search, service
+        discovery, and localization behavior.
+      </p>
+
+      <section class="card">
+        <form id="keyword-form">
+          <label>
+            Platform
+            <select name="platform" required>
+              <option value="TikTok">TikTok</option>
+              <option value="Instagram">Instagram</option>
+            </select>
+          </label>
+
+          <label>
+            Seed Keyword
+            <input name="seedKeyword" value="engine oil" required />
+          </label>
+
+          <label>
+            Location
+            <input name="location" value="Dar es Salaam" required />
+          </label>
+
+          <button type="submit">Generate Keywords</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Gemini / Nano Banana Image Preview</h2>
+        <form id="image-form">
+          <label>
+            Creative Prompt
+            <input
+              name="prompt"
+              value="Engine oil change promo for Dar es Salaam with mechanic and clean garage"
+              required
+            />
+          </label>
+          <button type="submit">Generate Preview</button>
+        </form>
+        <div id="image-result"></div>
+      </section>
+
+      <section class="card">
+        <h2>Output</h2>
+        <pre id="output">Run generation to see JSON output.</pre>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
