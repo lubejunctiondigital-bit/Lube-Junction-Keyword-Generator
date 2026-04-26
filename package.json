@@ -1,0 +1,15 @@
+{
+  "name": "lube-junction-keyword-generator",
+  "version": "1.0.0",
+  "description": "Platform-specific keyword and hashtag generator for Tanzania oil and lubricants marketing",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "check": "node --check server.js && node --check src/services/keywordGenerator.js && node --check src/services/imageGenerator.js && node --check public/app.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
